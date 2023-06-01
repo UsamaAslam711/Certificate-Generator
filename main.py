@@ -1,16 +1,4 @@
-from PIL import Image, ImageDraw, ImageFont
-import os
 
-# Open the PNG image file
-image = Image.open('image/Participation.png')
-
-# Create a drawing object
-draw = ImageDraw.Draw(image)
-
-# Define the font and size for the text
-font = ImageFont.truetype('GreatVibes-Regular.ttf', 400)
-# Define the text to write on the image
-text = input('Enter the name: ')
 
 # Calculate the size of the text
 text_width, text_height = draw.textbbox((0, 0), text, font=font)[2:]
